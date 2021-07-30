@@ -1,14 +1,16 @@
 /*
- * Build-Smart Popup-Plugin
- *
- * Examples at: https://build-smart.de
+ * Smart-Popup-Plugin
  *
  * Copyright (c) 2020 - Florian Winge
  * Author: Florian Winge
  */
 
 (function($){
-
+    // Change button text for different languages.
+    var confirmSuccessButtonText = "Yes",
+        confirmNoSuccessButtontext = "No",
+        alertButtonText = "Okay";
+    
     var overlay, outer, inner, loading, close, currentOpts,
 
     // ########## Private methods ##########
@@ -196,7 +198,7 @@
     // Create confirm-dialog
     $.smartpopup.confirm = function(text, callback){
         var confirmContent= '<div class="smartpopup-confirm-text">' + text + '</div>';
-        confirmContent += '<div class="smartpopup-confirm-buttons"><button id="smartpopup-confirm-true" class="blue">Ja</button><button id="smartpopup-confirm-false" class="blue">Nein</button></div>';
+        confirmContent += '<div class="smartpopup-confirm-buttons"><button id="smartpopup-confirm-true" class="blue">'+ confirmSuccessButtontext +'</button><button id="smartpopup-confirm-false" class="blue">'+ confirmNoSuccessButtontext +'</button></div>';
 
         $.smartpopup({
             content: confirmContent,
@@ -230,7 +232,7 @@
     // Create confirm-dialog
     $.smartpopup.alert = function(text, callback = function(){}){
         var alertContent= '<div class="smartpopup-confirm-text">' + text + '</div>';
-        alertContent += '<div class="smartpopup-confirm-buttons"><button id="smartpopup-confirm-true" class="blue">Okay</button></div>';
+        alertContent += '<div class="smartpopup-confirm-buttons"><button id="smartpopup-confirm-true" class="blue">'+ alertButtonText +'</button></div>';
 
         $.smartpopup({
             content: alertContent,
