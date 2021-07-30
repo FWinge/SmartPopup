@@ -22,14 +22,14 @@ $.smartpopup.confirm(
 );
 
 <h2>Your SmartPopup</h2>
-$.smartpopup.({
-    content             :   null, // your html content. Only used, if url is null.
-    url                 :   null, // url to your content.
-    showCloseButton     :   false, // (bool)
-    closeOnOutsideClick :   true, // (bool)
-    onOutsideClick      :   null, // (function)
-    onStart             :   null, // (function)
-    onLoad              :   null, // (function)
-    onClose             :   null, // (function)
-    onClosed            :   null // (function)
-});
+$.smartpopup.({<br/>
+    <b>content</b>             :   null, // your html content. Only used, if url is null.<br/>
+    <b>url</b>                 :   null, // url to your content.<br/>
+    <b>showCloseButton</b>     :   false, // (bool)<br/>
+    <b>closeOnOutsideClick</b> :   true, // (bool)<br/>
+    <b>onOutsideClick</b>      :   null, // (function)<br/>
+    <b>onStart</b>             :   null, // (function)<br/>
+    <b>onLoad</b>              :   null, // (function)<br/>
+    <b>onClose</b>            :   null, // (function)<br/>
+    <b>onClosed</b>            :   null // (function)<br/>
+});<br/>
