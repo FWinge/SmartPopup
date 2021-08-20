@@ -22,7 +22,7 @@ $.smartpopup.confirm(
 );
 
 <h2>Your SmartPopup</h2>
-$.smartpopup.({<br/>
+$.smartpopup({<br/>
     <b>content</b>             :   null, // your html content. Only used, if url is null.<br/>
     <b>url</b>                 :   null, // url to your content.<br/>
     <b>showCloseButton</b>     :   false, // (bool)<br/>
